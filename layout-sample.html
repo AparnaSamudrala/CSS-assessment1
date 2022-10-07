@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  
+}
+
+/* Style the header */
+header {
+  background-color: #888;
+  border: 2px solid grey;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+/* Style the navigation menu */
+nav {
+ 
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #888;
+  border: 2px solid grey;
+}
+
+.main-content div{
+	border: 3px solid grey;
+    border-radius: 5px;
+    flex-direction: row;
+    margin: 1rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.main-content{
+	flex: 3;
+	margin: 20px;
+	border: 3px solid grey;
+    border-radius: 5px;
+}
+
+/* Style the content */
+article {
+  flex: 1;
+  border-radius: 3px;
+  background-color: #888;
+  border: 2px solid grey;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Header Text</h2>
+</header>
+
+<section>
+  <nav>
+    <p>Nav</P>
+  </nav>
+  <div class="main-content">
+	<h2 style="text-align: center">section</h2>
+    <div style="height: 80px;">header</div>
+    <div style="height: 150px;">article</div>
+    <div style="height: 80px;">footer</div>
+  </div>
+  
+  <article>
+    <h1>Side</h1>
+    
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
