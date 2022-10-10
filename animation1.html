@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.card {
+	
+	
+	text-align: center;
+	font-family: arial;
+	
+	height: 100%;
+	
+	
+}
+
+.card-wrapper{
+	width: 60rem;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	top: 30vh;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+ul{
+  list-style-type: none; 
+  padding-bottom: 40px;
+}
+li{
+  display: inline-block;
+  width: 70px;
+}
+
+        div.card-content:before,
+        div.card-content:after{
+            position:absolute;
+            content:'';
+            width:100%;
+            height:100%;
+            left: 0;
+            transform: skewy(10deg);
+            z-index:5;
+            
+        }
+        div.card-content:before{
+            top:-160%;
+            background-color: #e04e01;
+            transition:left .3s;
+            
+        }
+        div.card-content:after{
+            bottom:-160%;
+            background-color: #05293e;
+            transition: right .3s;
+            
+        }
+        div.card-content:hover::before{
+            top:-50%;
+        }
+        div.card-content:hover::after{
+            bottom:-50%;
+        }
+        .card-content:hover .card-inner-content{
+            z-index: 10;
+			position: relative;
+			
+        }
+		
+		
+		
+		.card-content{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            transition: z-index .3s;
+            z-index:1;
+			 
+        }
+		
+</style>
+</head>
+<body>
+
+
+
+<div class="card-wrapper">
+  
+<div class="card">
+	<div class="card-content">
+		<div class="card-inner-content">
+	  <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+	  <h1>Aparna Samudrala</h1>
+	  <p class="title">Languages Known</p>
+	  <ul>
+		<li>C</li>
+		<li>C++</li>
+		<li>Java</li>
+	  </ul>
+	 </div>
+	 </div>
+	  
+  </div>
+</div>
+
+</body>
+</html>

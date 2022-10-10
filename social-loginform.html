@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+  width: 150px;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.google {
+  background-color: #fff;
+  color: #333;
+  width: 150px;
+  display: inline-block;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  
+}
+
+form{
+	width: 30%;
+	margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <form>
+    <div class="row">
+      <h2 style="text-align:center">Sign in with </h2>
+      
+
+      <div class="">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Facebook
+         </a>
+        
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Google
+        </a>
+      </div>
+
+      <div class="row">
+        
+		<label for="username"><b>User Name</b></label>
+        <input type="text" name="username" placeholder="Username" required>
+		<label for="username"><b>Password</b><a href="#">Forgot?</a></label>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+		<div class="">
+		  <span>Not a member?</span><a href="#">Sign Up now</a>
+		</div>
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.main-container{
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  height:100vh;
+  background-color: lightblue;
+}
+.left{
+    background-color: white;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    height:100%;
+    flex-grow:1;
+    padding:20px;
+  }
+.right{
+    background-color: white;
+    width:30%;
+    height:100%;
+    padding:20px;
+}
+.sec1,.sec2{
+     padding-left: 3rem;
+}
+.sec1,.sec2,.sec3{
+   
+    background: #ccc;
+    margin: 0 .5em;
+}
+.sec1{
+    height:30%;
+	background-color: darkgrey;
+   
+}
+.sec2{
+    height:60%;
+	padding-top: 3rem;
+}
+.sec3{
+    height:100%;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: center;
+  }
+.text{
+	margin: 1rem;
+	width: 90%;
+	height: 4px;
+	background-color: darkgrey;
+	
+}
+
+.text-wide.text{
+	height: 60px;
+    width: 200px;
+}
+
+.header-wrapper{
+	width: 50%;
+	margin-bottom: 20%;
+}
+
+.profile{
+	padding-top: 30px;
+}
+
+.fa-user{color: lightgrey;}
+
+i {
+  display: inline-block;
+  background: gray;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3em; /* adjust padding */
+  line-height: initial !important; /* reset line-height */
+  height: 1em;
+  width: 1em;
+  text-align:center;
+}
+
+.header-wrapper .text:first-child{height: 8px;}
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="main-container">
+        <div class="left">
+			  <div class="sec1">
+			  </div>
+			  <div class="sec2">
+					<div class="header-wrapper">
+						<h2 class="text"></h2>
+						<div class="text"></div>
+					</div>
+					<div class="content-wrapper">
+						<div class="text"></div>
+						<div class="text"></div>
+						<div class="text"></div>
+						<div class="text"></div>
+						<div class="text"></div>
+						<div class="text"></div>
+					</div >
+				</div>
+		  </div>
+        
+       
+        <div class="right">
+            <div class="sec3">
+				<div class="profile"><i class="fa fa-user fa-5x"></i></div>
+				
+				<div class="text"></div>
+				<div class="text"></div>
+				<div class="text"></div>		
+				<div class="text"></div>
+				<div class="text-wide text"></div>
+				
+			</div>
+        </div>
+       
+   </div>
+</body>
+</html>
